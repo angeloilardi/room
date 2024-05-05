@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${leagueSpartan.className} relative`}>
+      <body className={`${leagueSpartan.className} relative bg-white`}>
         <Navbar />
         {children}
       </body>
