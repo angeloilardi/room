@@ -16,23 +16,23 @@ export default function Navbar() {
         isMenuOpen ? `bg-white` : "bg-transparent"
       }`}
     >
-      <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
         {isMenuOpen ? <IconClose /> : <IconMenu />}
       </button>
       <div
-        className={`flex w-full ${
+        className={`flex w-full md:justify-start ${
           isMenuOpen ? `justify-between` : `justify-center`
         }`}
       >
         <p
           className={`${
             isMenuOpen && "hidden"
-          } text-center text-2xl tracking-wide`}
+          } text-center text-2xl tracking-wide md:text-4xl`}
         >
           room
         </p>
         {/* Desktop navigation */}
-        <div className={`hidden md:block`}>
+        <div className={`hidden md:flex gap-8 items-center ml-14`}>
           {menuItems.map((item, index) => {
             return (
               <Link key={index} href={"#"}>
