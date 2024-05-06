@@ -20,14 +20,14 @@ export default function Navbar() {
         {isMenuOpen ? <IconClose /> : <IconMenu />}
       </button>
       <div
-        className={`flex w-full md:justify-start ${
+        className={`flex w-full md:justify-start items-center ${
           isMenuOpen ? `justify-between` : `justify-center`
         }`}
       >
         <p
           className={`${
             isMenuOpen && "hidden"
-          } text-center text-2xl tracking-wide md:text-4xl`}
+          } text-center text-2xl tracking-wide md:text-3xl`}
         >
           room
         </p>
