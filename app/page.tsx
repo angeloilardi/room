@@ -5,16 +5,16 @@ import aboutLight from "./../public/images/image-about-light.jpg";
 
 const slides = [
   {
-    desktop: "./images/desktop-image-hero-1.jpg",
-    mobile: "./images/mobile-image-hero-1.jpg",
+    desktop: "/images/desktop-image-hero-1.jpg",
+    mobile: "/images/mobile-image-hero-1.jpg",
   },
   {
-    desktop: "./images/desktop-image-hero-2.jpg",
-    mobile: "./images/mobile-image-hero-2.jpg",
+    desktop: "/images/desktop-image-hero-2.jpg",
+    mobile: "/images/mobile-image-hero-2.jpg",
   },
   {
-    desktop: "./images/desktop-image-hero-3.jpg",
-    mobile: "./images/mobile-image-hero-3.jpg",
+    desktop: "/images/desktop-image-hero-3.jpg",
+    mobile: "/images/mobile-image-hero-3.jpg",
   },
 ];
 

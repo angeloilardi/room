@@ -6,8 +6,8 @@ import angleRightIcon from "./../../public/images/icon-angle-right.svg";
 import Image from "next/image";
 
 interface srcSet {
-    desktop: string;
-    mobile: string
+  desktop: string;
+  mobile: string;
 }
 export default function Carousel({
   slides,
@@ -37,20 +37,22 @@ export default function Carousel({
           >
             {slides.map((slide: srcSet, index) => {
               return (
-                <>
-                  <img
-                    key={index}
+                <div key={index} className="min-w-full">
+                  <Image
                     src={slide.mobile}
                     alt=""
+                    width={375}
+                    height={360}
                     className="min-w-full md:hidden"
                   />
-                  <img
-                    key={index}
+                  <Image
+                    width={840}
+                    height={534}
                     src={slide.desktop}
                     alt=""
                     className="min-w-full hidden md:block aspect-[3/2]"
                   />
-                </>
+                </div>
               );
             })}
           </div>
