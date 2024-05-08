@@ -1,6 +1,7 @@
 import Carousel from "./components/Carousel";
-import IconArrow from "./components/IconArrow";
-import Navbar from "./components/Navbar";
+import Image from "next/image";
+import aboutDark from './../public/images/image-about-dark.jpg'
+import aboutLight from "./../public/images/image-about-light.jpg";
 
 const slides = [
   {
@@ -60,8 +61,8 @@ export default function Home() {
 
       {/* About Section */}
       <section className="flex flex-col lg:flex-row ">
-        <img
-          src="./images/image-about-dark.jpg"
+        <Image
+       src={aboutDark}
           alt=""
           className="w-full lg:max-w-[28%]"
         />
@@ -78,8 +79,8 @@ export default function Home() {
             help you create your dream space.
           </p>
         </div>
-        <img
-          src="./images/image-about-light.jpg"
+        <Image
+          src={aboutLight}
           alt=""
           className="w-full lg:min-w-[calc(41.66%_-112px)]"
           // style={{

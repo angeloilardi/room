@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import IconArrow from "./IconArrow";
+import angleLeftIcon from "./../../public/images/icon-angle-left.svg";
+import angleRightIcon from "./../../public/images/icon-angle-right.svg";
+import Image from "next/image";
 
 interface srcSet {
     desktop: string;
@@ -39,13 +42,13 @@ export default function Carousel({
                     key={index}
                     src={slide.mobile}
                     alt=""
-                    className="min-w-full lg:hidden"
+                    className="min-w-full md:hidden"
                   />
                   <img
                     key={index}
                     src={slide.desktop}
                     alt=""
-                    className="min-w-full hidden lg:block aspect-[3/2]"
+                    className="min-w-full hidden md:block aspect-[3/2]"
                   />
                 </>
               );
@@ -57,13 +60,13 @@ export default function Carousel({
               className="bg-black w-14 h-14 flex items-center justify-center"
               onClick={handlePrevious}
             >
-              <img src="./images/icon-angle-left.svg" alt="" />
+              <Image src={angleLeftIcon} alt="" />
             </button>
             <button
               className="bg-black w-14 h-14 flex items-center justify-center"
               onClick={handleNext}
             >
-              <img src="./images/icon-angle-right.svg" alt="" />
+              <Image src={angleRightIcon} alt="" />
             </button>
           </div>
         </div>
@@ -86,13 +89,13 @@ export default function Carousel({
               className="bg-black size-14 flex items-center justify-center"
               onClick={handlePrevious}
             >
-              <img src="./images/icon-angle-left.svg" alt="" />
+              <Image src={angleLeftIcon} alt="" />
             </button>
             <button
               className="bg-black size-14 flex items-center justify-center"
               onClick={handleNext}
             >
-              <img src="./images/icon-angle-right.svg" alt="" />
+              <Image src={angleRightIcon} alt="" />
             </button>
           </div>
         </section>
