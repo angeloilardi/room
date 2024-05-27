@@ -16,9 +16,12 @@ export default function Navbar() {
         isMenuOpen ? `bg-white` : "bg-transparent"
       }`}
     >
+      {/* burger menu */}
       <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
         {isMenuOpen ? <IconClose /> : <IconMenu />}
       </button>
+
+      
       <div
         className={`flex w-full md:justify-start items-center ${
           isMenuOpen ? `justify-between` : `justify-center`
@@ -45,8 +48,8 @@ export default function Navbar() {
         {/* Mobile navigation */}
         <div
           className={`${
-            isMenuOpen ? "block" : `hidden`
-          } text-black gap-8 ml-auto flex`}
+            isMenuOpen ? "block " : `hidden`
+          } text-black gap-8 ml-auto flex font-[600]`}
         >
           {menuItems.map((item, index) => {
             return (
