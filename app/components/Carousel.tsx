@@ -27,7 +27,7 @@ export default function Carousel({
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:max-h-[66.66vh] relative">
+      <div className="flex flex-col lg:flex-row relative">
         <div className="overflow-hidden relative min-h-max">
           <div
             className={`flex transition ease-out duration-40`}
